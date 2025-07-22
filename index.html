@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Pandey - Software Developer</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation"></div>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">Harsh Pandey</a>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <h3>Hi There, I'm</h3>
+                <h1>Harsh Pandey</h1>
+                <p class="subtitle">Crafting innovative digital experiences with cutting-edge technology.</p>
+                <div class="btn-group">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Let's Connect
+                    </a>
+                </div>
+            </div>
+            <div class="home-visual">
+                <div class="code-snippet">
+                    <div style="color: #ff006e;">const</div>
+                    <div style="color: #00f5ff;">developer</div>
+                    <div style="color: #ffffff;">=</div>
+                    <div style="color: #00ff88;">'Harsh'</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-grid">
+                <div class="about-content fade-in">
+                    <p>I'm a passionate Software Engineering student with an insatiable curiosity for creating digital solutions that matter. My journey in tech is driven by the belief that great software can transform lives and businesses.</p>
+                    <p>Currently pursuing my degree while building real-world applications that showcase my skills in modern web and mobile development.</p>
+                    <div class="education-card">
+                        <h4 style="color: var(--accent-primary); margin-bottom: 0.5rem;">
+                            <i class="fas fa-graduation-cap"></i> Education
+                        </h4>
+                        <p style="margin: 0; color: var(--text-primary);">B.Voc in Software Development (3rd Year)</p>
+                        <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">University of Allahabad</p>
+                    </div>
+                </div>
+                <div class="about-skills fade-in">
+                    <h3 style="color: var(--accent-primary); margin-bottom: 1.5rem;">
+                        <i class="fas fa-code"></i> Core Technologies
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Mobile Dev</span>
+                        <span class="skill-tag">Web APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card fade-in" onclick="openModal('modal-natures-basket')">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Nature's Basket</h3>
+                        <p>Full-stack e-commerce platform with modern UI and seamless payment integration</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openModal('modal-instagram-clone')">
+                    <div class="project-image">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Social Connect</h3>
+                        <p>Instagram-inspired social media app with real-time features and engaging UI</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flutter</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Real-time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openModal('modal-employee-management')">
+                    <div class="project-image">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Employee Hub</h3>
+                        <p>Comprehensive management system with advanced filtering and responsive design</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Bootstrap</span>
+                            <span class="project-tag">CRUD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openModal('modal-login-components')">
+                    <div class="project-image">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Auth Components</h3>
+                        <p>Reusable authentication modules with modern design and validation</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Modular</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li>React & Modern JavaScript</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Tailwind CSS</li>
+                        <li>Responsive Design</li>
+                        <li>UI/UX Implementation</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend & APIs</h3>
+                    <ul class="skill-list">
+                        <li>Node.js & Express</li>
+                        <li>Firebase Services</li>
+                        <li>RESTful APIs</li>
+                        <li>Database Design</li>
+                        <li>Authentication Systems</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <ul class="skill-list">
+                        <li>Flutter Framework</li>
+                        <li>Dart Programming</li>
+                        <li>Cross-platform Apps</li>
+                        <li>Native Features</li>
+                        <li>App Store Deployment</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Development Tools</h3>
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>VS Code & IDEs</li>
+                        <li>Figma Design</li>
+                        <li>Chrome DevTools</li>
+                        <li>Agile Workflow</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Let's Build Something Amazing</h2>
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>Ready to Collaborate?</h3>
+                    <p>I'm always excited to work on innovative projects and connect with fellow developers, designers, and entrepreneurs. Let's discuss how we can bring your ideas to life!</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>harshp444498@gmail.com</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 82684 44498</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Prayagraj, Uttar Pradesh, India</span>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-in" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tell me about your project..." rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Harsh Pandey. Crafted with <span style="color: var(--accent-secondary);">♥</span> and lots of coffee</p>
+        </div>
+    </footer>
+
+    <!-- Project Modals -->
+    <div id="modal-natures-basket" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-natures-basket')">&times;</span>
+            <h2 style="color: var(--accent-primary); margin-bottom: 1rem;">
+                <i class="fas fa-shopping-cart"></i> Nature's Basket
+            </h2>
+            <div style="background: var(--secondary-bg); padding: 1rem; border-radius: 10px; margin: 1rem 0;">
+                <strong style="color: var(--accent-primary);">Tech Stack:</strong>
+                <span style="color: var(--text-secondary);">Flutter (Mobile), React + Tailwind (Web), Firebase Backend</span>
+            </div>
+            <p style="line-height: 1.8; margin-bottom: 1rem;">A comprehensive e-commerce platform featuring intuitive product browsing, secure user authentication, seamless payment gateway integration, and real-time order tracking. The app delivers a premium shopping experience across both mobile and web platforms.</p>
+            <div style="margin-top: 1.5rem;">
+                <strong style="color: var(--success-color);">Key Features:</strong>
+                <ul style="margin: 0.5rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                    <li>Dynamic product categories with search & filtering</li>
+                    <li>Secure authentication & user profiles</li>
+                    <li>Real-time cart management</li>
+                    <li>Integrated payment gateway</li>
+                    <li>Order tracking & history</li>
+                    <li>Admin dashboard for inventory management</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-instagram-clone" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-instagram-clone')">&times;</span>
+            <h2 style="color: var(--accent-primary); margin-bottom: 1rem;">
+                <i class="fab fa-instagram"></i> Social Connect
+            </h2>
+            <div style="background: var(--secondary-bg); padding: 1rem; border-radius: 10px; margin: 1rem 0;">
+                <strong style="color: var(--accent-primary);">Tech Stack:</strong>
+                <span style="color: var(--text-secondary);">Flutter, Firebase Firestore, Firebase Auth, Cloud Storage</span>
+            </div>
+            <p style="line-height: 1.8; margin-bottom: 1rem;">A feature-rich social media application inspired by Instagram, built with Flutter and Firebase. Includes real-time social interactions, media sharing, and engaging user experiences with modern UI design patterns.</p>
+            <div style="margin-top: 1.5rem;">
+                <strong style="color: var(--success-color);">Key Features:</strong>
+                <ul style="margin: 0.5rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                    <li>Photo & video upload with filters</li>
+                    <li>Real-time likes, comments & shares</li>
+                    <li>Dynamic feed with infinite scroll</li>
+                    <li>User profiles & following system</li>
+                    <li>Stories feature with 24h expiry</li>
+                    <li>Push notifications & activity feed</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-employee-management" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-employee-management')">&times;</span>
+            <h2 style="color: var(--accent-primary); margin-bottom: 1rem;">
+                <i class="fas fa-users-cog"></i> Employee Management Hub
+            </h2>
+            <div style="background: var(--secondary-bg); padding: 1rem; border-radius: 10px; margin: 1rem 0;">
+                <strong style="color: var(--accent-primary);">Tech Stack:</strong>
+                <span style="color: var(--text-secondary);">HTML5, CSS3, Bootstrap, Vanilla JavaScript</span>
+            </div>
+            <p style="line-height: 1.8; margin-bottom: 1rem;">A comprehensive web application for managing employee data with full CRUD operations, advanced filtering capabilities, and responsive design. Built with vanilla JavaScript to demonstrate core programming skills.</p>
+            <div style="margin-top: 1.5rem;">
+                <strong style="color: var(--success-color);">Key Features:</strong>
+                <ul style="margin: 0.5rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                    <li>Complete CRUD operations (Create, Read, Update, Delete)</li>
+                    <li>Advanced search & filtering system</li>
+                    <li>Data validation & error handling</li>
+                    <li>Responsive design for all devices</li>
+                    <li>Local storage for data persistence</li>
+                    <li>Export functionality for reports</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-login-components" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-login-components')">&times;</span>
+            <h2 style="color: var(--accent-primary); margin-bottom: 1rem;">
+                <i class="fas fa-lock"></i> Authentication Components
+            </h2>
+            <div style="background: var(--secondary-bg); padding: 1rem; border-radius: 10px; margin: 1rem 0;">
+                <strong style="color: var(--accent-primary);">Tech Stack:</strong>
+                <span style="color: var(--text-secondary);">HTML5, CSS3, JavaScript, Form Validation API</span>
+            </div>
+            <p style="line-height: 1.8; margin-bottom: 1rem;">A collection of modern, reusable authentication components with sleek design and robust client-side validation. Perfect for integrating into various web projects with minimal customization needed.</p>
+            <div style="margin-top: 1.5rem;">
+                <strong style="color: var(--success-color);">Key Features:</strong>
+                <ul style="margin: 0.5rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                    <li>Modular & reusable component architecture</li>
+                    <li>Real-time form validation</li>
+                    <li>Password strength indicator</li>
+                    <li>Social login integration ready</li>
+                    <li>Accessible design with ARIA labels</li>
+                    <li>Multiple theme variations</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
